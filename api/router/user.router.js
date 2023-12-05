@@ -1,8 +1,7 @@
-const express = require('express');
-const { test } = require('../controllers/user.controller');
+import express from 'express';
+import{test} from '../controllers/user.controller.js';
 const route = express.Router()
 
+route.get('/test', test)
 
-route.get('/api/test', test)
-
-module.exports = route;
+export default route;

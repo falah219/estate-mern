@@ -1,7 +1,10 @@
-const express = require('express');
+import express from 'express';
+import apiUser from './user.router.js';
+import apiAuth from './auth.router.js';
+
 const routes  = express.Router();
-const user = require('./user.router');
 
-routes.use('/user', user);
+routes.use('/api/user', apiUser);
+routes.use('/api/auth', apiAuth);
 
-module.exports = routes;
+export default routes;
