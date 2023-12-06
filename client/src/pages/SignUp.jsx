@@ -37,7 +37,7 @@ export const SignUp = () => {
       setLoading(false);
       setError(null);
       navigate('/signin');
-      
+
     } catch (error) {
       setLoading(false);
       setError(error.message);
@@ -45,7 +45,7 @@ export const SignUp = () => {
 
   }
 
-  console.log(formData);
+  // console.log(formData);
   return (
     <div className="max-w-2xl p-3 mx-auto">
       <h1 className="text-3xl text-center font-semibold my-7">
