@@ -35,8 +35,9 @@ export const SignUp = () => {
         return
       }      
       setLoading(false);
-      setError(null)
-      navigate('/signin')
+      setError(null);
+      navigate('/signin');
+      
     } catch (error) {
       setLoading(false);
       setError(error.message);
